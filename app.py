@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 import pandas as pd
 st.set_page_config(page_title="Employee Dashboard", layout="wide")
@@ -59,7 +58,6 @@ if st.session_state.employees:
         for emp in st.session_state.employees:
             if emp["Name"] == update_name:
                 emp["Salary"] = new_salary
-=======
 import streamlit as st
 import pandas as pd
 st.set_page_config(page_title="Employee Dashboard", layout="wide")
@@ -120,5 +118,4 @@ if st.session_state.employees:
         for emp in st.session_state.employees:
             if emp["Name"] == update_name:
                 emp["Salary"] = new_salary
->>>>>>> 4a4e8a1e0f2dd3b3e1ebcbb4c61886e8aa9dccdb
         st.success("Salary Updated")
